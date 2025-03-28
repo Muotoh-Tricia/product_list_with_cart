@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/productlist.css">
+    <script src="./javascript/test.js" defer></script>
+
+    <!-- Fav-Icon -->
+    <link rel="icon" href="./assets/images/favicon-32x32.png">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>test-List</title>
+</head>
+
+<body style="background-color: var(--Rose-100);">
+
+    <div>
+        <div>
+            <h1 class="heading-text">Deserts</h1>
+
+            <div id="product-Container"></div>
+        </div>
+    </div>
+
+    <!-- Empty-cart modal -->
+    <div class="Empty-cart-modal" id="empty-cart-modal" style="display: none;">
+        <div class="cart-modal-header">
+            <p>Your cart (0)</p>
+        </div>
+        <div class="cart-modal-body">
+            <img src="/assets/images/illustration-empty-cart.svg" alt="img">
+        </div>
+        <div class="cart-modal-footer">
+            <p>Your added items will appear here</p>
+        </div>
+    </div>
+
+    <!-- Active-cart-modal -->
+    <div class="Active-cart-modal" id="active-cart-modal" style="display: none;">
+        <div class="number-of-items-in-cart">
+            <h3>Your Cart</h3>
+            <p id="cart-item-count">0 items</p>
+        </div>
+        <div class="orders" id="order-list"></div>
+        <span class="close-button" onclick="closeCartModal()">&times;</span>
+        <div class="order-total">
+            <p id="total-price">$0.00</p>
+        </div>
+        <div>
+            <p class="neutral-carbon">
+                <img src="/assets/images/icon-carbon-neutral.svg" alt="">This is a <strong>carbon-neutral</strong> delivery
+            </p>
+        </div>
+        <div>
+            <button class="confirm-btn">Confirm Order</button>
+        </div>
+    </div>
+
+</body>
+</html>
